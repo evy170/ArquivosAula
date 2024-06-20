@@ -11,5 +11,10 @@ namespace ProjetoGitHub
         {
             MessageBox.Show("bem-vindo ao GITHUB!");
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
