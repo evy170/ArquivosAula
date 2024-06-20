@@ -23,5 +23,11 @@ namespace ProjetoGitHub
             string textButton1 = tb_button1.Text;
             MessageBox.Show($"texto do campo:  {textButton1} - novidade da evelyn");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Evelyn
+            MessageBox.Show($"Email: {email.Text} - Senha: {senha.Text}");
+        }
     }
 }

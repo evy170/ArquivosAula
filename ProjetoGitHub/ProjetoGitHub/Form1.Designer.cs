@@ -32,10 +32,10 @@
             bt_mensagem = new Button();
             label1 = new Label();
             tb_nome = new TextBox();
-
             senha = new TextBox();
             email = new TextBox();
             tb_button1 = new TextBox();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -79,7 +79,6 @@
             tb_nome.Size = new Size(167, 23);
             tb_nome.TabIndex = 3;
             // 
-
             // senha
             // 
             senha.Location = new Point(228, 99);
@@ -93,23 +92,32 @@
             email.Name = "email";
             email.Size = new Size(100, 23);
             email.TabIndex = 5;
+            // 
+            // tb_button1
+            // 
             tb_button1.Location = new Point(448, 205);
             tb_button1.Name = "tb_button1";
             tb_button1.Size = new Size(100, 23);
             tb_button1.TabIndex = 4;
-
-            
-
+            // 
+            // button2
+            // 
+            button2.Location = new Point(245, 163);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 6;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(560, 270);
-
+            Controls.Add(button2);
             Controls.Add(email);
             Controls.Add(senha);
-
             Controls.Add(tb_button1);
             Controls.Add(tb_nome);
             Controls.Add(label1);
@@ -134,6 +142,6 @@
         private TextBox email;
 
         private TextBox tb_button1;
-
+        private Button button2;
     }
 }
