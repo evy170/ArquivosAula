@@ -30,7 +30,11 @@
         {
             button1 = new Button();
             bt_mensagem = new Button();
-            label1 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -53,22 +57,57 @@
             bt_mensagem.UseVisualStyleBackColor = true;
             bt_mensagem.Click += bt_mensagem_Click;
             // 
-            // label1
+            // textBox1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(328, 166);
-            label1.Name = "label1";
-            label1.Size = new Size(95, 25);
-            label1.TabIndex = 2;
-            label1.Text = "OI EVELYN";
-            label1.Click += label1_Click;
+            textBox1.Location = new Point(251, 62);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(298, 31);
+            textBox1.TabIndex = 3;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(251, 141);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(298, 31);
+            textBox2.TabIndex = 4;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(251, 24);
+            label2.Name = "label2";
+            label2.Size = new Size(61, 25);
+            label2.TabIndex = 5;
+            label2.Text = "E-mail";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(251, 104);
+            label3.Name = "label3";
+            label3.Size = new Size(60, 25);
+            label3.TabIndex = 6;
+            label3.Text = "Senha";
+            // 
+            // button2
+            // 
+            button2.Location = new Point(335, 194);
+            button2.Name = "button2";
+            button2.Size = new Size(112, 34);
+            button2.TabIndex = 7;
+            button2.Text = "LOGIN";
+            button2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            Controls.Add(button2);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(bt_mensagem);
             Controls.Add(button1);
             Name = "Form1";
@@ -81,6 +120,10 @@
 
         private Button button1;
         private Button bt_mensagem;
-        private Label label1;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private Label label2;
+        private Label label3;
+        private Button button2;
     }
 }
