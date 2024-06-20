@@ -9,7 +9,8 @@ namespace ProjetoGitHub
 
         private void bt_mensagem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("bem-vindo ao GITHUB!");
+            string nome = tb_mensagem.Text; 
+            MessageBox.Show($"Olá {nome}, tudo bem?");
         }
 
         private void label1_Click(object sender, EventArgs e)
