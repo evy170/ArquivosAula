@@ -32,6 +32,8 @@
             bt_mensagem = new Button();
             label1 = new Label();
             tb_nome = new TextBox();
+            senha = new TextBox();
+            email = new TextBox();
             SuspendLayout();
             // 
             // button1
@@ -59,7 +61,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(230, 100);
+            label1.Location = new Point(245, 135);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(62, 15);
@@ -74,11 +76,27 @@
             tb_nome.Size = new Size(167, 23);
             tb_nome.TabIndex = 3;
             // 
+            // senha
+            // 
+            senha.Location = new Point(228, 99);
+            senha.Name = "senha";
+            senha.Size = new Size(100, 23);
+            senha.TabIndex = 4;
+            // 
+            // email
+            // 
+            email.Location = new Point(228, 70);
+            email.Name = "email";
+            email.Size = new Size(100, 23);
+            email.TabIndex = 5;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(560, 270);
+            Controls.Add(email);
+            Controls.Add(senha);
             Controls.Add(tb_nome);
             Controls.Add(label1);
             Controls.Add(bt_mensagem);
@@ -97,5 +115,7 @@
         private Button bt_mensagem;
         private Label label1;
         private TextBox tb_nome;
+        private TextBox senha;
+        private TextBox email;
     }
 }
