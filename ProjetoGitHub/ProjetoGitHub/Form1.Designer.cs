@@ -32,10 +32,10 @@
             bt_mensagem = new Button();
             label1 = new Label();
             tb_nome = new TextBox();
-
             senha = new TextBox();
             email = new TextBox();
             tb_button1 = new TextBox();
+            bt_mostrar = new Button();
             SuspendLayout();
             // 
             // button1
@@ -64,7 +64,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(245, 135);
+            label1.Location = new Point(239, 52);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(62, 15);
@@ -79,7 +79,6 @@
             tb_nome.Size = new Size(167, 23);
             tb_nome.TabIndex = 3;
             // 
-
             // senha
             // 
             senha.Location = new Point(228, 99);
@@ -93,23 +92,32 @@
             email.Name = "email";
             email.Size = new Size(100, 23);
             email.TabIndex = 5;
+            // 
+            // tb_button1
+            // 
             tb_button1.Location = new Point(448, 205);
             tb_button1.Name = "tb_button1";
             tb_button1.Size = new Size(100, 23);
             tb_button1.TabIndex = 4;
-
-            
-
+            // 
+            // bt_mostrar
+            // 
+            bt_mostrar.Location = new Point(239, 128);
+            bt_mostrar.Name = "bt_mostrar";
+            bt_mostrar.Size = new Size(75, 23);
+            bt_mostrar.TabIndex = 6;
+            bt_mostrar.Text = "Mostrar";
+            bt_mostrar.UseVisualStyleBackColor = true;
+            bt_mostrar.Click += bt_mostrar_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(560, 270);
-
+            Controls.Add(bt_mostrar);
             Controls.Add(email);
             Controls.Add(senha);
-
             Controls.Add(tb_button1);
             Controls.Add(tb_nome);
             Controls.Add(label1);
@@ -134,6 +142,6 @@
         private TextBox email;
 
         private TextBox tb_button1;
-
+        private Button bt_mostrar;
     }
 }
