@@ -32,6 +32,7 @@
             bt_mensagem = new Button();
             label1 = new Label();
             tb_nome = new TextBox();
+            tb_button1 = new TextBox();
             SuspendLayout();
             // 
             // button1
@@ -43,6 +44,7 @@
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // bt_mensagem
             // 
@@ -74,11 +76,19 @@
             tb_nome.Size = new Size(167, 23);
             tb_nome.TabIndex = 3;
             // 
+            // tb_button1
+            // 
+            tb_button1.Location = new Point(448, 205);
+            tb_button1.Name = "tb_button1";
+            tb_button1.Size = new Size(100, 23);
+            tb_button1.TabIndex = 4;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(560, 270);
+            Controls.Add(tb_button1);
             Controls.Add(tb_nome);
             Controls.Add(label1);
             Controls.Add(bt_mensagem);
@@ -97,5 +107,6 @@
         private Button bt_mensagem;
         private Label label1;
         private TextBox tb_nome;
+        private TextBox tb_button1;
     }
 }
