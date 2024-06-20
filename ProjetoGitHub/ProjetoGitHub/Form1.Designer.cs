@@ -37,7 +37,7 @@
             // button1
             // 
             button1.Location = new Point(465, 237);
-            button1.Margin = new Padding(2, 2, 2, 2);
+            button1.Margin = new Padding(2);
             button1.Name = "button1";
             button1.Size = new Size(78, 20);
             button1.TabIndex = 0;
@@ -46,6 +46,8 @@
             // 
             // bt_mensagem
             // 
+            bt_mensagem.DialogResult = DialogResult.Ignore;
+            bt_mensagem.FlatAppearance.BorderSize = 2;
             bt_mensagem.Location = new Point(26, 234);
             bt_mensagem.Name = "bt_mensagem";
             bt_mensagem.Size = new Size(130, 23);
@@ -81,7 +83,8 @@
             Controls.Add(label1);
             Controls.Add(bt_mensagem);
             Controls.Add(button1);
-            Margin = new Padding(2, 2, 2, 2);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
