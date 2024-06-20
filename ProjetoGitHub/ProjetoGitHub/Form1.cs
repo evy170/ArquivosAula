@@ -10,7 +10,7 @@ namespace ProjetoGitHub
         private void bt_mensagem_Click(object sender, EventArgs e)
         {
             string nome = tb_nome.Text;
-            MessageBox.Show($"Ol· {nome}!!!");
+            MessageBox.Show($"Ol√° {nome}!!!");
         }
 
         private void label1_Click(object sender, EventArgs e)
