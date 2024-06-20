@@ -17,5 +17,11 @@ namespace ProjetoGitHub
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string textButton1 = tb_button1.Text;
+            MessageBox.Show($"texto do campo:  {textButton1}");
+        }
     }
 }
