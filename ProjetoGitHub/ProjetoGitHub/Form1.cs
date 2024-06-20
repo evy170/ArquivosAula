@@ -6,5 +6,10 @@ namespace ProjetoGitHub
         {
             InitializeComponent();
         }
+
+        private void bt_mensagem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("bem-vindo ao GITHUB!");
+        }
     }
 }
