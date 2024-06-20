@@ -10,7 +10,7 @@ namespace ProjetoGitHub
         private void bt_mensagem_Click(object sender, EventArgs e)
         {
             string nome = tb_nome.Text;
-            MessageBox.Show($"Ol· {nome}!!!");
+            MessageBox.Show($"Ol√° {nome}!!!");
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -21,7 +21,14 @@ namespace ProjetoGitHub
         private void button1_Click(object sender, EventArgs e)
         {
             string textButton1 = tb_button1.Text;
-            MessageBox.Show($"texto do campo:  {textButton1} - novidade da evelyn");
+            MessageBox.Show($"texto do campo:  \n{textButton1} - Mais um texto");
+        }
+
+        private void bt_mostrar_Click(object sender, EventArgs e)
+        {
+            string txt_email = email.Text;
+            string txt_senha = senha.Text;
+            MessageBox.Show($"Seu e-mail: {txt_email} \n senha: {txt_senha}");
         }
 
         private void button2_Click(object sender, EventArgs e)
