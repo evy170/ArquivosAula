@@ -22,7 +22,7 @@ namespace ProjetoGitHub
         {
             string textButton1 = tb_button1.Text;
             MessageBox.Show($"texto do campo:  \n{textButton1} - Mais um texto");
-            MessageBox.Show($"lendy inseriu mais um texto");
+            MessageBox.Show($"lendy inseriu mais um texto - Mais novidades");
         }
 
         private void bt_mostrar_Click(object sender, EventArgs e)
