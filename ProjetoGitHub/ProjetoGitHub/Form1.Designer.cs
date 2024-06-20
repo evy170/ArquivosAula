@@ -36,6 +36,7 @@
             email = new TextBox();
             tb_button1 = new TextBox();
             bt_mostrar = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -110,11 +111,21 @@
             bt_mostrar.UseVisualStyleBackColor = true;
             bt_mostrar.Click += bt_mostrar_Click;
             // 
+            // button2
+            // 
+            button2.Location = new Point(239, 157);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 7;
+            button2.Text = "Mostrar";
+            button2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(560, 270);
+            Controls.Add(button2);
             Controls.Add(bt_mostrar);
             Controls.Add(email);
             Controls.Add(senha);
@@ -143,5 +154,6 @@
 
         private TextBox tb_button1;
         private Button bt_mostrar;
+        private Button button2;
     }
 }
